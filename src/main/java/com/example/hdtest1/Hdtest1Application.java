@@ -14,12 +14,12 @@ public class Hdtest1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Hdtest1Application.class, args);
 	}
-	@GetMapping("/getdate")
+	@GetMapping("/getdate1")
 	public String getdate(){
 
 		Date date = new Date() ;
 
-		return String.format(" --> NSF: hdtest1 v2: " + date.toString() + " <-- \n");
+		return String.format(" --> This is hdtest1 v1: " + date.toString() + " <-- \n");
 
 	}
 }
