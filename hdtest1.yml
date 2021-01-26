@@ -17,4 +17,4 @@ nsf:
     patterns:
       - className: com.example.hdtest1.Hdtest1Application
         methods:
-          - name: getdate
+          - name: getdate1
