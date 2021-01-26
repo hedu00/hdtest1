@@ -15,7 +15,7 @@ public class Hdtest1Application {
 		SpringApplication.run(Hdtest1Application.class, args);
 	}
 	@GetMapping("/getdate1")
-	public String getdate(){
+	public String getdate1(){
 
 		Date date = new Date() ;
 
