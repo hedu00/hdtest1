@@ -1,4 +1,5 @@
-FROM harbor-poc666.netease.com/hd-hdpro/openjdk:8-jdk-alpine
+#FROM harbor-poc666.netease.com/hd-hdpro/openjdk:8-jdk-alpine
+FROM openjdk:8-jdk-alpine
 
 MAINTAINER hedu
 
@@ -11,4 +12,4 @@ ADD napm-agent.properties /napm-agent.properties
 
 #ENTRYPOINT ["java","-Dnsf.log.level=debug","-javaagent:/nsf-agent.jar=hdtest1","-jar","/hdtest1.jar"]
 
-ENTRYPOINT ["java","-Dnsf.log.level=debug","-javaagent:/nsf-agent.jar=hdtest1","-javaagent:/napm-java-agent/napm-java-rewriter.jar=conf=/napm-agent.properties",-jar","/hdtest1.jar"]
+ENTRYPOINT ["java","-Dnsf.log.level=debug","-javaagent:/nsf-agent.jar=hdtest1","-javaagent:/napm-java-agent/napm-java-rewriter.jar=conf=/napm-agent.properties","-jar","/hdtest1.jar"]
