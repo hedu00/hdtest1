@@ -1,4 +1,4 @@
-FROM harbor-poc666.netease.com/hd-hdpro/openjdk:8-jdk-alpine
+FROM harbor-poc666.netease.com/hd-hdpro/openjdk:v2
 
 MAINTAINER hedu
 
