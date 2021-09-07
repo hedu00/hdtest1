@@ -1,20 +1,20 @@
 nsf:
   type: http
   version: '2.0'
-  nsfServer: 'http://nsf-server-poc666.netease.com'
+  nsfServer: 'http://nsf-server.sdlt.qingzhou.com'
   application:
-    name: hdtest1
-    version: v2
-    projectCode: hdpro
-    envCode: prod
+    name: nsf-demo-stock-viewer
+    version: 11.0.0
+    projectCode: project1
+    envCode: skiff-env1
     zone: default
     group: default
     tags: []
   authority:
-    accessKey: f0ca48cf97fd41068dfdea6ec2b6d515
-    secretKey: d3f3324b40884333b923f156721b2636
+    accessKey: 3edf7f7d70434b1b9520b54693132591
+    secretKey: 6e2b23bbdac0412aa924b598d88d2ffe
   manager:
     patterns:
-      - className: com.example.hdtest1.Hdtest1Application
+      - className: com.example.hdtest1.*
         methods:
           - name: getdate1
