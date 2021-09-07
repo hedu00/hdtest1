@@ -19,7 +19,7 @@ public class Hdtest1Application {
 
 		Date date = new Date() ;
 
-		return String.format(" --> This is hdtest1 v2: " + date.toString() + " <-- \n");
+		return String.format(" --> This is hdtest1 v1: " + date.toString() + " <-- \n");
 
 	}
 }
