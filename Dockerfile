@@ -8,7 +8,7 @@ MAINTAINER hedu
 #ADD ./src/main/resources/nsf.yml /hdtest1.yml
 
 #不带nsf-agent启动
-ENTRYPOINT ["java","-jar","hdtest1-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","./target/hdtest1-0.0.1-SNAPSHOT.jar"]
 
 #带nsf-agent启动
 #ENTRYPOINT ["java","-Dnsf.log.level=debug","-javaagent:/nsf-agent.jar=hdtest1","-jar","/hdtest1.jar"]
