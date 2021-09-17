@@ -10,6 +10,9 @@ ADD ./src/main/resources/nsf.yml /hdtest1.yml
 #RUN tar zxf /napm-java-agent542.tar.gz
 #ADD napm-agent.properties /napm-agent.properties
 
-ENTRYPOINT ["java","-Dnsf.log.level=debug","-javaagent:/nsf-agent.jar=hdtest1","-jar","/hdtest1.jar"]
+#不带nsf-agent启动
+ENTRYPOINT ["java","-Dnsf.log.level=debug","-jar","/hdtest1.jar"]
+
+#ENTRYPOINT ["java","-Dnsf.log.level=debug","-javaagent:/nsf-agent.jar=hdtest1","-jar","/hdtest1.jar"]
 
 #ENTRYPOINT ["java","-Dnsf.log.level=debug","-javaagent:/nsf-agent.jar=hdtest1","-javaagent:/napm-java-agent/napm-java-rewriter.jar=conf=/napm-agent.properties","-jar","/hdtest1.jar"]
