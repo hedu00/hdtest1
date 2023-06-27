@@ -11,8 +11,8 @@ nsf:
     group: default
     tags: []
   authority:
-    accessKey: 3edf7f7d70434b1b9520b54693132591
-    secretKey: 6e2b23bbdac0412aa924b598d88d2ffe
+    accessKey: 
+    secretKey: 
   manager:
     patterns:
       - className: com.example.hdtest1.*
